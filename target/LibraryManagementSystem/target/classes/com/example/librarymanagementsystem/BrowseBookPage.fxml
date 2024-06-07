@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LibraryManagementSystem.BrowseBookPageController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #005098;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BackButton" layoutY="348.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Back" />
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="BookListTable" layoutX="-197.0" prefHeight="400.0" prefWidth="497.0">
+              <columns>
+                <TableColumn prefWidth="111.0" text="Title" />
+                <TableColumn prefWidth="70.0" text="Author" />
+                  <TableColumn prefWidth="72.0" text="Publisher" />
+                  <TableColumn prefWidth="46.0" text="ISBN" />
+                  <TableColumn prefWidth="93.0" text="Publication Date" />
+                  <TableColumn prefWidth="104.0" text="Available Copies" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
