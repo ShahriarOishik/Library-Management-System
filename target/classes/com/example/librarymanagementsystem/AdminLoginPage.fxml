@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AdminLoginPageController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #005086;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="301.0" fitWidth="309.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/_252fe73c-ca20-4a73-b6bf-240b22024b52.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+               <TextField fx:id="adminIdField" layoutX="89.0" layoutY="168.0" promptText="Admin ID" style="-fx-background-color: transparent; -fx-border-color: #005086; -fx-border-width: 0px 0px 2px 0px;" />
+               <PasswordField fx:id="passwordField" layoutX="89.0" layoutY="199.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #005086; -fx-border-width: 0px 0px 2px 0px;" />
+               <Label layoutX="26.0" layoutY="171.0" text=" ADMIN ID">
+                  <font>
+                     <Font name="Bebas Regular" size="18.0" />
+                  </font>
+               </Label>
+               <Label layoutX="19.0" layoutY="201.0" text="Password">
+               <font>
+                  <Font name="Bebas Regular" size="18.0" />
+               </font>
+            </Label>
+               <Button fx:id="loginButton" layoutX="86.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: #005086;" text="Login" textFill="WHITE">
+                  <font>
+                     <Font name="Bebas Regular" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="backButton" layoutX="85.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #005086;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Bebas Regular" size="12.0" />
+               </font>
+            </Button>
+               <Text fx:id="pageTitleText" fill="#005086" fontSmoothingType="LCD" layoutX="51.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
+                  <font>
+                     <Font name="Bebas Regular" size="48.0" />
+                  </font>
+               </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

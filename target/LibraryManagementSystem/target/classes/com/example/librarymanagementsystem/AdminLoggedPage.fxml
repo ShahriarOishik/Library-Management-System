@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AdminLoggedPageController">
+  <tabs>
+    <Tab text="Book">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="ListOfBooks" layoutX="300.0" prefHeight="371.0" prefWidth="303.0" />
+                  <Button fx:id="RemoveBook" layoutX="152.0" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#AdminRemoveBook" prefHeight="68.0" prefWidth="147.0" text="Remove Book" />
+                  <Button fx:id="AddBook" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#AdminAddBookInterface" prefHeight="68.0" prefWidth="150.0" text="Add Book" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Member">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="ListOfMembers" prefHeight="371.0" prefWidth="303.0" />
+                  <Button fx:id="RemoveMember" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#AdminRemoveMember" prefHeight="68.0" prefWidth="150.0" text="Remove Member" />
+                  <Button fx:id="EditMember" layoutX="152.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#AdminMemberEdit" prefHeight="68.0" prefWidth="148.0" text="Edit Member" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Account">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="adminLogOut" layoutX="231.0" layoutY="271.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="139.0" text="Log Out" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
